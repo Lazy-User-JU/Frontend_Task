@@ -134,7 +134,7 @@ const DAYS_SHORT   = ['S','M','T','W','T','F','S'];
 
 const VAC_STORE    = 'wall_cal_vacations_v3';
 const noteKey      = (s: string, e: string) => `wall_cal_notes_${s}_${e}`;
-const toISO      = (d: Date)   => d.toISOString().split('T')[0];
+const toISO      = (d: Date)   => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 const fromISO    = (s: string) => new Date(s + 'T00:00:00');
 const sameDay    = (a: Date, b: Date) => toISO(a) === toISO(b);
 const daysBetween= (a: Date, b: Date) => Math.round(Math.abs(b.getTime()-a.getTime())/86400000);
