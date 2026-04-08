@@ -8,7 +8,7 @@
 
 ---
 
-![Vacation Planner Preview](public/preview.png)
+![Vacation Planner Preview](https://drive.google.com/file/d/1xqMHUav5_4bIjUiT3EmT_UuhARQGois_/view?usp=sharing)
 
 ---
 
